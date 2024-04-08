@@ -48,7 +48,7 @@ public class EnnemiScript : MonoBehaviour , IDamagable
     void Update() {
         ManageGroundHeight();
         if (IsPlayerIsLineOfSite()) {
-            if (_animator) {
+            if (_animator!=null) {
                 _animator.SetBool("Aim", true);
                 _animator.SetBool("Walk", false);
             }
@@ -58,7 +58,7 @@ public class EnnemiScript : MonoBehaviour , IDamagable
             playertarget = true;
         }
         else {
-            if( _animator)_animator.SetBool("Aim", false);
+            if( _animator!=null)_animator.SetBool("Aim", false);
             if( _ennemiStat==EnnemiStat.Aim)_ennemiStat = EnnemiStat.Walk;
             playertarget = false;
             
@@ -79,7 +79,7 @@ public class EnnemiScript : MonoBehaviour , IDamagable
             return;
         }
 
-        if (_animator) {
+        if (_animator!=null) {
             _animator.transform.forward = new Vector3(_direction, 0, 0);
             _animator.SetBool("Walk", true);
         }
@@ -136,10 +136,10 @@ public class EnnemiScript : MonoBehaviour , IDamagable
 
     private void ManagerAimStat() {
         _firingTimer += Time.deltaTime;
-        if( _animator)_animator.transform.forward = new Vector3(_direction, 0, 0);
+        if( _animator!=null)_animator.transform.forward = new Vector3(_direction, 0, 0);
         if (_firingTimer >= _fireRate) {
             _firingTimer = 0;
-            if( _animator)_animator.SetTrigger("Fire");
+            if( _animator!=null)_animator.SetTrigger("Fire");
             Invoke("ManagerFire", _projectileDelay);
             Debug.Log("Fire");
         }
@@ -153,7 +153,7 @@ public class EnnemiScript : MonoBehaviour , IDamagable
     public void TakeDamage(int damage) {
         _hp -= damage;
         if (_hp <= 0) {
-            if( _animator)_animator.SetBool("Die", true);
+            if( _animator!=null)_animator.SetBool("Die", true);
             GetComponent<BoxCollider>().enabled = false;
             this.enabled = false;
         }
