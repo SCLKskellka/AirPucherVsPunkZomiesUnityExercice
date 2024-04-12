@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playertarget: 0
-  _animator: {fileID: 0}
+  _animator: {fileID: 8776152270684578385}
   _ennemiStat: 0
   _moveSpeed: 2
   _groundLayerMask:
@@ -1181,7 +1181,7 @@ Animator:
   m_GameObject: {fileID: 8433639204347569182}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 03d1fe4e93c9d4445b3a611df2ee5713, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

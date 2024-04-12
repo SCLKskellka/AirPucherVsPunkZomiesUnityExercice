@@ -1286,6 +1286,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ennemi
       objectReference: {fileID: 0}
+    - target: {fileID: 8776152270698969926, guid: 90e4c00567a08ce498f9396a96554c0c,
+        type: 3}
+      propertyPath: _ennemiStat
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
