@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7594967045352447759}
   - component: {fileID: 7594967045352447756}
   - component: {fileID: 7594967045352447757}
+  - component: {fileID: 8462220006876626503}
   m_Layer: 3
   m_Name: CratePile
   m_TagString: Untagged
@@ -48,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9f5c4afcad25f54db216f766ca82396, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 0}
+  _animator: {fileID: 8462220006876626503}
   _collider: {fileID: 7594967045352447757}
 --- !u!65 &7594967045352447757
 BoxCollider:
@@ -71,6 +72,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.3396101, y: 1.955546, z: 2.274061}
   m_Center: {x: 0.21585403, y: 0.99536055, z: 0.29462683}
+--- !u!95 &8462220006876626503
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7594967045352447754}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2f5eb38defe9af347bf9046aa0ddcf5e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &7594967045440278250
 PrefabInstance:
   m_ObjectHideFlags: 0
